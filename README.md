@@ -11,6 +11,8 @@ To design and simulate a Monostable Multivibrator using NE555 in Proteus Design 
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/85cf7c20-3627-44e7-814f-674b8b3b6b2c" />
+
 Pin Connections:
 •	Pin 1 → Ground
 •	Pin 2 → Trigger (Connected to push button)
@@ -43,8 +45,19 @@ The NE555 operating in monostable mode acts as a one-shot pulse generator. It ha
 6.	Observe output pulse on CRO.
 7.	Measure pulse width.
 ## Tabulation
-S.No	        R (kΩ)	          C (µF)	        Theoretical Pulse Width	            Practical Pulse Width
+
+| S.No | R (kΩ) | C (µF) | Theoretical Pulse Width (s) | Practical Pulse Width (s) |
+|------|--------|--------|------------------------------|---------------------------|
+| 1 | 10 | 220 | 2.42 | 2.40 |
+| 2 | 10 | 100 | 1.10 | 1.08 |
+| 3 | 10 | 470 | 5.17 | 5.10 |
+| 4 | 22 | 220 | 5.32 | 5.30 |
+| 5 | 47 | 220 | 11.37 | 11.30 |
 ## Waveform
+<img width="1061" height="882" alt="image" src="https://github.com/user-attachments/assets/d2d38b4c-27c4-4f82-907e-ad520825f738" />
+<img width="1064" height="873" alt="image" src="https://github.com/user-attachments/assets/4e8635b9-ba8b-4b19-8b26-eb1dba4b7bc8" />
+
+
 •	Trigger → Short negative pulse
 •	Output → Single positive pulse
 •	Capacitor voltage → Exponential charging waveform
@@ -58,9 +71,23 @@ The practical value closely matches the theoretical value.
 •	Increasing R or C increases pulse duration.
 •	Used in timers, delay circuits, and pulse generation applications.
 ## Viva Questions
-1.	What is a monostable multivibrator?
-2.	Write the pulse width formula.
-3.	What is the stable state of monostable?
-4.	Why is it called “one-shot”?
-5.	What happens if capacitor value increases?
+1.What is a monostable multivibrator?
+
+A circuit with one stable state and one unstable state that produces a single output pulse when triggered.
+
+2.Write the pulse width formula.
+
+T = 1.1 × R × C
+
+3.What is the stable state of monostable?
+
+The normal state of the circuit where the output is LOW.
+
+4.Why is it called one-shot?
+
+Because one trigger produces one output pulse.
+
+5.What happens if capacitor value increases?
+
+Pulse width increases because charging time increases.
 
